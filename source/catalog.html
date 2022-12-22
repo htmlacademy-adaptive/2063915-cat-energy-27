@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,21 @@
 </head>
 
 <body class="page__body">
-    <header class="catalog__header">
-        <a class="catalog-header-logo">
-            <img class="catalog-header_logo-image" src="images/catalog/logo-mobile.svg" width="33" height="37"
+    <header class="page__header">
+        <a class="page-header-logo">
+            <img class="logo-image" src="images/catalog/logo-mobile.svg" width="33" height="37"
                 alt="Кот Энерджи">
         </a>
-        <a class="catalog-header-logo-2">
-            <img class="catalog-header__logo-image2" src="images/catalog/logo2.svg" width="101" height="18"
+        <a class="page-header-logo-2">
+            <img class="logo-image2" src="images/catalog/logo2.svg" width="101" height="18"
                 alt="Кот Энерджи">
         </a>
-        <nav class="catalog-nav">
-            <button class="catalog-nav__toggle" type="button">
+        <nav class="page-nav">
+            <button class="page-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="catalog-nav__wrapper">
-                <ul class="catalog-nav__list site-list">
+            <div class="page-nav__wrapper">
+                <ul class="page-nav__list site-list">
                     <li class="site-list__item">
                         <a>Главная</a>
                     </li>
@@ -40,10 +40,10 @@
             <header class="catalog-conteiner__header">
                 <h1 class="catalog-header">Каталог продукции</h1>
             </header>
-            <div class="catalog-products">
-                <ul class="products-list">
+            <div class="products-card">
+                <ul class="products-card-list">
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy PRO 500 г</h3>
+                        <h3 class="products-card-name">Cat Energy PRO 500 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-1-desktop1.png" width="68"
                                 height="86" alt="Упаковка питания">
@@ -57,7 +57,7 @@
                         <button class="products-card-order" type="submit">Заказать</button>
                     </li>
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy PRO 1000 г</h3>
+                        <h3 class="products-card-name">Cat Energy PRO 1000 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-2-desktop1.png" width="84"
                                 height="100" alt="Упаковка питания">
@@ -71,7 +71,7 @@
                         <button class="products-card-order" type="submit">Заказать</button>
                     </li>
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy PRO 500 г</h3>
+                        <h3 class="products-card-name">Cat Energy PRO 500 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-3-desktop.png" width="68"
                                 height="86" alt="Упаковка питания">
@@ -85,7 +85,7 @@
                         <button class="products-card-order" type="submit">Заказать</button>
                     </li>
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy PRO 1000 г</h3>
+                        <h3 class="products-card-name">Cat Energy PRO 1000 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-4-desktop1.png" width="84"
                                 height="100" alt="Упаковка питания">
@@ -99,7 +99,7 @@
                         <button class="products-card-order" type="submit">Заказать</button>
                     </li>
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy slim 500 г</h3>
+                        <h3 class="products-card-name">Cat Energy slim 500 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-5-desktop.png" width="68"
                                 height="86" alt="Упаковка питания">
@@ -113,7 +113,7 @@
                         <button class="products-card-order" type="submit">Заказать</button>
                     </li>
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy slim 1000 г</h3>
+                        <h3 class="products-card-name">Cat Energy slim 1000 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-6-desktop.png" width="84"
                                 height="100" alt="Упаковка питания">
@@ -127,7 +127,7 @@
                         <button class="products-card-order" type="submit">Заказать</button>
                     </li>
                     <li class="products-card__item">
-                        <h3 class="prodact-name">Cat Energy slim 500 г</h3>
+                        <h3 class="products-card-name">Cat Energy slim 500 г</h3>
                         <a class="products-card__link">
                             <img class="products-card-image" src="images/catalog/catalog-7-desktop.png" width="68"
                                 height="86" alt="Упаковка питания">
@@ -196,26 +196,26 @@
                 <img class="map" src="images/catalog/map-mobile.jpg" width="320" height="362" alt="Карта">
             </div>
             <div class="catalog-footer__social social">
-                <img class="footer-social__logo-image" src="images/catalog/logo2.svg" width="128" height="24"
+                <img class="footer-logo-image" src="images/catalog/logo2.svg" width="128" height="24"
                     alt="Кот Энерджи">
                 <div class="contacts">
                     <h2 class="visually-hidden">Соцальные сети</h2>
                     <ul class="contacts__list">
-                        <li class="contacts__item contacts__item-vk">
+                        <li class="contacts__item contacts__item--vk">
                             <a class="contacts__item__button" href="https://vk.com/htmlacademy">
                                 <img class="vk" src="images/catalog/vkontakte.svg" width="320" height="362"
                                     alt="ВКонтакте">
                                 <span class="visually-hidden">Vkontakte</span>
                             </a>
                         </li>
-                        <li class="contacts__item contacts__item-youtube">
+                        <li class="contacts__item contacts__item--youtube">
                             <a class="contacts__item__button" href="https://youtube.com/htmlacademy">
                                 <img class="youtube" src="images/catalog/youtube.svg" width="320" height="362"
                                     alt="Ютуб">
                                 <span class="visually-hidden">Youtube</span>
                             </a>
                         </li>
-                        <li class="contacts__item contacts__item-tg">
+                        <li class="contacts__item contacts__item--tg">
                             <a class="contacts__item__button" href="https://tg.com/htmlacademy">
                                 <img class="tg" src="images/catalog/telegram.svg" width="320" height="362"
                                     alt="Телеграм">
