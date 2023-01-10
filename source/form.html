@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
     <header class="page__header">
-        <a class="page-header-logo">
+        <a class="page-header-logo" href="index.html">
             <img class="logo-image" src="images/form/logo-mobile.svg" width="33" height="37"
                 alt="Кот Энерджи">
         </a>
@@ -43,18 +44,18 @@
             </header>
             <form class="form-conteiner__form" action="https://echo.htmlacademy.ru/" method="post">
                 <section class="information-about form">
-                    <fieldset class="form__information">
+                    <fieldset class="form-information">
                         <div class="information-about-name">
                             <label class="form__name" for="name">Имя:*</label>
-                            <input id="name" name="name" placeholder="Барсик" type="text" required>
+                            <input id="name" class="name-cat" name="name" placeholder="Барсик" type="text" required>
                         </div>
                         <div class="information-about-weight">
                             <label class="form__weight" for="weight">Вес (кг):*</label>
-                            <input id="weight" name="weight" placeholder="7" type="namber" required>
+                            <input id="weight" class="weight-cat" name="weight" placeholder="7" type="namber" required>
                         </div>
                         <div class="information-about-age">
                             <label class="form__age" for="age">Возраст (лет):</label>
-                            <input id="age" name="age" placeholder="7" type="namber">
+                            <input id="age" class="age-cat" name="age" placeholder="7" type="namber">
                         </div>
                     </fieldset>
                     <fieldset class="form-filter">
@@ -82,12 +83,12 @@
                     <fieldset class="form-contact-details">
                         <legend class="form-contact-details__title">Контактные данные (владельца кота)</legend>
                         <div class="form-email">
-                            <label for="form-contact__email" class="contact_email">E-mail:*</label>
-                            <input class="form-contact-details_email" placeholder="kuklachev@gmail.com" type="email"
+                            <label for="form-contact__email" class="contact__email">E-mail:*</label>
+                            <input class="form-contact-details_email" value="kuklachev@gmail.com" type="email"
                                 name="details-email" id="form-contact_email" value="E-mail:" required>
                         </div>
                         <div class="form-phone">
-                            <label for="form-contact__email" class="contact_phone">Телефон:*</label>
+                            <label for="form-contact__phone" class="contact__phone">Телефон:*</label>
                             <input id="form-contact__phone" class="txt" name="phone" placeholder="8 (960) 900-60-90"
                                 type="phone" placeholder="phone" required>
                         </div>
@@ -100,7 +101,7 @@
                         </textarea>
                     </fieldset>
                     <fieldset class="form-additionally">
-                        <legend class="form-additionally__title">Инфраструктура:</legend>
+                        <legend class="form-additionally__title">Дополнительно</legend>
                         <ul class="form-additionally-list">
                             <li class="form-additionally__item">
                                 <label class="control">
@@ -136,21 +137,22 @@
                     </p>
                 </section>
             </form>
+        </section>
 
     </main>
-    <footer class="catalog-footer">
-        <div class="catalog-footer__wrapper">
-            <div class="catalog-footer__adress adress">
+    <footer class="footer-conteiner">
+        <div class="footer-conteiner__wrapper">
+            <div class="footer-conteiner__adress adress">
                 <b class="adress__heading">Приглашаем к сотрудничеству дилеров!</b>
                 <p class="adress__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
-            <div class="catalog-footer__location location">
+            <div class="footer-conteiner__location location">
                 <h1 class="visually-hidden">Карта с указателем</h1>
-                <img class="map-logo" src="images/form/map-logo.png" width="57" height="53" alt="Указатель">
-                <img class="map" src="images/form/map-mobile.jpg" width="320" height="362" alt="Карта">
+                <img class="map-logo" src="images/index/map-logo.png" width="57" height="53" alt="Указатель">
+                <img class="map" src="images/index/map-mobile.jpg" width="320" height="362" alt="Карта">
             </div>
-            <div class="catalog-footer__social social">
-                <img class="footer-logo-image" src="images/form/logo2.svg" width="128" height="24"
+            <div class="footer-conteiner__social social">
+                <img class="footer-conteiner__logo-image" src="images/index/logo2.svg" width="128" height="24"
                     alt="Кот Энерджи">
                 <div class="contacts">
                     <h2 class="visually-hidden">Соцальные сети</h2>
@@ -164,22 +166,23 @@
                         </li>
                         <li class="contacts__item contacts__item--youtube">
                             <a class="contacts__item-contacts-button" href="https://youtube.com/htmlacademy">
-                                <img class="youtube" src="images/form/youtube.svg" width="320" height="362" alt="Ютуб">
+                                <img class="youtube" src="images/index/youtube.svg" width="320" height="362" alt="Ютуб">
                                 <span class="visually-hidden">Youtube</span>
                             </a>
                         </li>
                         <li class="contacts__item contacts__item--tg">
                             <a class="contacts__item-contacts-button" href="https://tg.com/htmlacademy">
-                                <img class="tg" src="images/form/telegram.svg" width="320" height="362" alt="Телеграм">
+                                <img class="tg" src="images/index//telegram.svg" width="320" height="362"
+                                    alt="Телеграм">
                                 <span class="visually-hidden">Tg</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="catalog-footer__copyright copyright">
+                <div class="footer-conteiner__copyright copyright">
                     <b class="copyright__text">HTML Academy</b>
                     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                        <img class="html-cademy" src="images/form/html_academy.svg" width="320" height="362"
+                        <img class="html-cademy" src="images/index/html_academy.svg" width="320" height="362"
                             alt="HTML Academy">
                         <span class="visually-hidden">HTML Academy</span></a>
                 </div>
