@@ -4,5 +4,27 @@
     @media (min-width: @tablet-width){
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media (min-width: @desktop-width) {
+        justify-content: space-between;
+    }
+}
+.advantages__item {
+    @media (min-width: @tablet-width){
+        max-width: 230px;
+        min-height: 280px;
+    }
+    @media (min-width: @desktop-width) {
+        max-width: 230px;
+    }
+}
+
+.advantages__item:first-child {
+    @media (min-width: @tablet-width) {
+    margin-right: 153px;
+    }
+    @media (min-width: @desktop-width) {
+        margin-right: 0;
     }
 }

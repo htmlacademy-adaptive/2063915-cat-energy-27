@@ -39,11 +39,27 @@
 
 .products-card__item {
   @media (min-width: @tablet-width) {
-    min-width: 324px;
+    width: 324px;
+    height: 511px;
     background-color: #F2F2F2;
+    margin-right: 60px;
   }
   @media (min-width: @desktop-width) {
-    min-width: 245px;
+    width: 245px;
+    height: 511px;
     background-color: #F2F2F2;
+    margin-right: 80px;
+  }
+}
+
+.products-card__item:nth-child(2n) {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.products-card__item:nth-child(4n) {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
