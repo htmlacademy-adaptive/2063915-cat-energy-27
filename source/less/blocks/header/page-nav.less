@@ -1,0 +1,29 @@
+.page-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+    .page-nav__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 710px;
+      margin: 0 auto;
+    }
+
+    .page-nav__toggle {
+      display: none;
+    }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav__wrapper {
+    width: 1220px;
+  }
+
+  .page-nav__toggle {
+      display: none;
+  }
+}
+

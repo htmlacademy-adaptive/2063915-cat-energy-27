@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,10 +27,10 @@
                         <a>Главная</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">Каталог продукции</a>
+                        <a href="catalog.html">Каталог продукции</a>
                     </li>
                     <li class="site-list__item site-list__item--active">
-                        <a href="#">Подбор программы</a>
+                        <a href="form.html">Подбор программы</a>
                     </li>
                 </ul>
             </div>
@@ -44,6 +45,7 @@
             </header>
             <form class="form-conteiner__form" action="https://echo.htmlacademy.ru/" method="post">
                 <section class="information-about form">
+                    <div class="form-info">
                     <fieldset class="form-information">
                         <div class="information-about-name">
                             <label class="form__name" for="name">Имя:*</label>
@@ -80,8 +82,10 @@
                             </li>
                         </ul>
                     </fieldset>
+                </div>
                     <fieldset class="form-contact-details">
                         <legend class="form-contact-details__title">Контактные данные (владельца кота)</legend>
+                        <div class="form-contact">
                         <div class="form-email">
                             <label for="form-contact__email" class="contact__email">E-mail:*</label>
                             <input class="form-contact-details_email" value="kuklachev@gmail.com" type="email"
@@ -92,7 +96,9 @@
                             <input id="form-contact__phone" class="txt" name="phone" placeholder="8 (960) 900-60-90"
                                 type="phone" placeholder="phone" required>
                         </div>
+                    </div>
                     </fieldset>
+                
                     <fieldset class="form-comment">
                         <legend class="form-comment__title">Комментарий</legend>
                         <label for="form-comment__msg" class="visually-hidden">Комментарий</label>
@@ -156,23 +162,23 @@
                     alt="Кот Энерджи">
                 <div class="contacts">
                     <h2 class="visually-hidden">Соцальные сети</h2>
-                    <ul class="contacts__list">
+                    <ul class="contacts-list">
                         <li class="contacts__item contacts__item--vk">
                             <a class="contacts__item-contacts-button" href="https://vk.com/htmlacademy">
-                                <img class="vk" src="images/index/vkontakte.svg" width="320" height="362"
+                                <img class="vk" src="images/index/vkontakte.svg" width="28" height="22"
                                     alt="ВКонтакте">
                                 <span class="visually-hidden">Vkontakte</span>
                             </a>
                         </li>
                         <li class="contacts__item contacts__item--youtube">
                             <a class="contacts__item-contacts-button" href="https://youtube.com/htmlacademy">
-                                <img class="youtube" src="images/index/youtube.svg" width="320" height="362" alt="Ютуб">
+                                <img class="youtube" src="images/index/youtube.svg" width="28" height="22" alt="Ютуб">
                                 <span class="visually-hidden">Youtube</span>
                             </a>
                         </li>
                         <li class="contacts__item contacts__item--tg">
                             <a class="contacts__item-contacts-button" href="https://tg.com/htmlacademy">
-                                <img class="tg" src="images/index//telegram.svg" width="320" height="362"
+                                <img class="tg" src="images/index//telegram.svg" width="28" height="22"
                                     alt="Телеграм">
                                 <span class="visually-hidden">Tg</span>
                             </a>
@@ -182,7 +188,7 @@
                 <div class="footer-conteiner__copyright copyright">
                     <b class="copyright__text">HTML Academy</b>
                     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                        <img class="html-cademy" src="images/index/html_academy.svg" width="320" height="362"
+                        <img class="html-cademy" src="images/index/html_academy.svg" width="27" height="34"
                             alt="HTML Academy">
                         <span class="visually-hidden">HTML Academy</span></a>
                 </div>

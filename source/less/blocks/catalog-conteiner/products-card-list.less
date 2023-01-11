@@ -23,3 +23,27 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+.products-card-list {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.products-card__item {
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+    background-color: #F2F2F2;
+  }
+  @media (min-width: @desktop-width) {
+    min-width: 245px;
+    background-color: #F2F2F2;
+  }
+}

@@ -21,3 +21,11 @@
   line-height: 16px;
   text-transform: uppercase;
 }
+
+.directions-list {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}

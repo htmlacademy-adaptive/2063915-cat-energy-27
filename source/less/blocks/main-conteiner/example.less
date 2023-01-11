@@ -1,5 +1,14 @@
 .example {
     background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @tablet-width) {
+      background-color: #ffffff
+    }
+    @media (min-width: @desktop-width) {
+    flex-direction: row;
+    background-color: #EAEAEA;
+    }
 }
 
 .example__heading {
