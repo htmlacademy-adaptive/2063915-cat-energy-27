@@ -1,16 +1,31 @@
 .main-conteiner__picture-desktop {
-  background-image: url("../images/index/index-background-desktop2.png");
+  background-image: url("../img/index/index-background-desktop2.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: rgba(104, 183, 56, 0.85);
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    background-image: none;
+    text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index/index-background-desktop2.png");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: 100% -50px;
+    background-size: 720px 694px;
+  }
 }
 
 .main-conteiner__heading-1{
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
 }
 
 .main-conteiner__heading-2 {
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
 }

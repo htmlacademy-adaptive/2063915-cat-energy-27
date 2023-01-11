@@ -1,0 +1,23 @@
+.form-additionally-list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @tablet-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 533px;
+        min-height: 218px;
+        justify-content: space-between;
+    }
+    @media (min-width: @desktop-width) {
+        flex-direction: row;
+        width: 1125px;
+        justify-content: space-between;
+        min-height: 40px;
+    }
+}
+
+.form-additionally__item {
+    @media (min-width: @tablet-width) {
+        min-width: 221px;
+    }
+}
