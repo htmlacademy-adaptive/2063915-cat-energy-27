@@ -1,12 +1,20 @@
 .form-additionally-list {
+    padding-left: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
     @media (min-width: @tablet-width) {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 533px;
-        min-height: 218px;
+        width: 535px;
+        min-height: 112px;
         justify-content: space-between;
+        align-content: space-between;
+        gap: 0;
     }
     @media (min-width: @desktop-width) {
         flex-direction: row;
@@ -19,5 +27,67 @@
 .form-additionally__item {
     @media (min-width: @tablet-width) {
         min-width: 221px;
+        min-height: 40px;
     }
 }
+
+
+.control-label {
+    text-transform: uppercase;
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        
+    }
+  }
+.control {
+    position: relative;
+    display: block;
+    padding-left: 45px;
+    @media (min-width: @tablet-width) {
+        padding-left: 60px;
+
+    }
+    @media (min-width: @desktop-width) {
+        padding-left: 60px;
+    }
+}
+
+.control-mark-checkbox {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    @media (min-width: @tablet-width) {
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    }
+}
+
+.control-mark-checkbox:disabled {
+    border: 1px solid #BABABA;
+  }
+
+.control-input[type="checkbox"]:checked + .control-mark-checkbox::before {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    content: "";
+    top: 8px;
+    left: 6px;
+    background-image: url(../img/form/checkbox.svg);
+    background-repeat: no-repeat;
+    @media (min-width: @tablet-width) {
+    top: 11px;
+    left: 10px;
+    background-image: url(../img/form/checkbox2.svg);
+    }
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-checkbox::before:disabled {
+    opacity: 0.3;
+  }

@@ -9,28 +9,33 @@
 </head>
 
 <body class="page__body">
-    <header class="page__header">
-        <a class="page-header-logo" href="index.html">
-            <img class="logo-image" src="img/form/logo-mobile.svg" width="33" height="37"
-                alt="Кот Энерджи">
-        </a>
-        <a class="page-header-logo-2">
-            <img class="logo-image2" src="img/form/logo2.svg" width="101" height="18" alt="Кот Энерджи">
-        </a>
-        <nav class="page-nav">
+    <header class="page-header page__header-catalog">
+        <ul class="page-header-list">
+            <li class="page-header_item">
+                <a class="page-header__logo" href="index.html">
+                    <img class="logo-image" src="img/index/logo-mobile.svg" width="33.5" height="38" alt="Кот Энерджи">
+                </a>
+            </li>
+            <li class="page-header_item">
+            <a class="page-header__logo-2" href="index.html">
+                <img class="logo-image2" src="img/index/logo2.svg" width="101" height="18" alt="Кот Энерджи">
+            </a>
+            </li>
+        </ul>
+        <nav class="page-nav page-nav--closed page-nav--nojs">
             <button class="page-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="page-nav__wrapper">
                 <ul class="page-nav__list site-list">
-                    <li class="site-list__item ">
-                        <a>Главная</a>
+                    <li class="site-list__item">
+                        <a class="site-list__link site-list__link-catalog" href="index.html">Главная</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="catalog.html">Каталог продукции</a>
+                        <a class="site-list__link site-list__link-catalog" href="catalog.html">Каталог продукции</a>
                     </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a href="form.html">Подбор программы</a>
+                    <li class="site-list__item">
+                        <a class="site-list__link site-list__link3 site-list__item--active site-list__link-catalog" href="form.html">Подбор программы</a>
                     </li>
                 </ul>
             </div>
@@ -64,19 +69,22 @@
                         <ul class="form-filter-list">
                             <li class="form-filter__item">
                                 <label class="control">
-                                    <input class="radio" type="radio" name="program-selection" value="slim" checked>
+                                    <input class="visually-hidden radio" type="radio" name="program-selection" value="slim" checked>
+                                    <span class="control-mark-radio"></span>
                                     <span class="control-label">Похудение</span>
                                 </label>
                             </li>
                             <li class="form-filter__item">
                                 <label class="control">
-                                    <input class="radio" type="radio" name="program-selection" value="fatness">
+                                    <input class="visually-hidden radio" type="radio" name="program-selection" value="fatness">
+                                    <span class="control-mark-radio"></span>
                                     <span class="control-label">Набор массы</span>
                                 </label>
                             </li>
                             <li class="form-filter__item">
                                 <label class="control">
-                                    <input class="radio" type="radio" name="program-selection" value="advice">
+                                    <input class="visually-hidden radio" type="radio" name="program-selection" value="advice">
+                                    <span class="control-mark-radio"></span>
                                     <span class="control-label">Не знаю (Нужен ваш совет)</span>
                                 </label>
                             </li>
@@ -103,7 +111,7 @@
                         <legend class="form-comment__title">Комментарий</legend>
                         <label for="form-comment__msg" class="visually-hidden">Комментарий</label>
                         <textarea id="form-comment__msg" class="form-msg" name="msg"
-                            placeholder="Расскажите обо всех повадках кота">
+                        placeholder="Расскажите обо всех повадках кота" type="text">Расскажите обо всех повадках кота
                         </textarea>
                     </fieldset>
                     <fieldset class="form-additionally">
@@ -111,36 +119,42 @@
                         <ul class="form-additionally-list">
                             <li class="form-additionally__item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="sweetener" checked>
+                                    <input class="visually-hidden control-input" type="checkbox" name="sweetener" checked>
+                                    <span class="control-mark-checkbox"></span>
                                     <span class="control-label">Сахарозаменитель</span>
                                 </label>
                             </li>
                             <li class="form-additionally__item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="water">
+                                    <input class="visually-hidden control-input" type="checkbox" name="water">
+                                    <span class="control-mark-checkbox"></span>
                                     <span class="control-label">Питьевая вода</span>
                                 </label>
                             </li>
                             <li class="form-additionally__item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="milk">
+                                    <input class="visually-hidden control-input" type="checkbox" name="milk">
+                                    <span class="control-mark-checkbox"></span>
                                     <span class="control-label">Молоко</span>
                                 </label>
                             </li>
                             <li class="form-additionally__item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="vitamins">
+                                    <input class="visually-hidden control-input" type="checkbox" name="vitamins">
+                                    <span class="control-mark-checkbox"></span>
                                     <span class="control-label">Витамины</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
+                    <div class="form-order-send">
                     <button class="form-order" type="submit">Отправить заявку</button>
                     <p class="form__legend">
                         <small>
                             * — Обязательные поля
                         </small>
                     </p>
+                </div>
                 </section>
             </form>
         </section>
@@ -148,14 +162,13 @@
     </main>
     <footer class="footer-conteiner">
         <div class="footer-conteiner__wrapper">
-            <div class="footer-conteiner__adress adress">
+            <div class="footer-conteiner__adress footer-conteiner-catalog__adress adress">
                 <b class="adress__heading">Приглашаем к сотрудничеству дилеров!</b>
                 <p class="adress__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
             <div class="footer-conteiner__location location">
                 <h1 class="visually-hidden">Карта с указателем</h1>
-                <img class="map-logo" src="img/index/map-logo.png" width="57" height="53" alt="Указатель">
-                <img class="map" src="img/index/map-mobile.jpg" width="320" height="362" alt="Карта">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716014495!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1674130493449!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="footer-map"></iframe>
             </div>
             <div class="footer-conteiner__social social">
                 <img class="footer-conteiner__logo-image" src="img/index/logo2.svg" width="128" height="24"
@@ -195,6 +208,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+
 
 </body>
 

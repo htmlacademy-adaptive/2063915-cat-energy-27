@@ -1,20 +1,25 @@
 .main-conteiner__picture-desktop {
   background-image: url("../img/index/index-background-desktop2.png");
-  background-size: 100% auto;
+  background-size: 320px auto;
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
   text-align: center;
   @media (min-width: @tablet-width) {
-    background-color: #ffffff;
     background-image: none;
-    text-align: center;
   }
   @media (min-width: @desktop-width) {
-    background-image: url("../img/index/index-background-desktop2.png");
+    background-image: url("../img/index/index-background-desktop1.png");
     background-repeat: no-repeat;
-    background-color: #ffffff;
-    background-position: 100% -50px;
-    background-size: 720px 694px;
+    background-size: 720px auto;
+    position: relative;
+    left: 720px;
+    top: -130px;
+    margin-bottom: 0;
+  }
+}
+.main-conteiner__wrapper {
+  @media (min-width: @desktop-width) {
+    height: 694px;
+    margin-bottom: 0;
   }
 }
 
@@ -22,10 +27,65 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  color: #ffffff;
+  padding-top: 27px;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+    width: 500px;
+    margin-left: 117px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: -617px;
+    padding-top: 223px;
+  }
 }
 
 .main-conteiner__heading-2 {
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+  color: #ffffff;
+  padding-top: 25px;
+  text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: start;
+    margin-left: 117px;
+    padding-top: 41px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: -617px;
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.can-mobile {
+  padding-top: 29px;
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    padding-top: 0;
+  }
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: -588px;
+    top: -250px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.directions {
+  @media (min-width: @desktop-width) {
+    margin-top: -120px;
+  }
 }

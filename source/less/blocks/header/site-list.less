@@ -3,11 +3,111 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  
   @media (min-width: @tablet-width) {
-    width: 440px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
   @media (min-width: @desktop-width) {
-    width: 478px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
   }
 }
 
+.site-list__item:last-child {
+  @media (min-width: @tablet-width) {
+    margin-left: 36px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 32px;
+  }
+}
+.site-list__item:first-child {
+  @media (min-width: @tablet-width) {
+  margin-right: 36px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 37px;
+
+  }
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid #E6E6E6;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+    padding-bottom: 10px;
+    
+  }
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+  }
+}
+
+.site-list__link:hover,
+.site-list__link:active {
+  color:rgba(255,255,255,0.3);
+}
+
+.site-list__link3 {
+  border-bottom: 1px solid #E6E6E6;
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.site-list__link-catalog {
+  @media (min-width: @desktop-width) {
+    color: #000000;
+  }
+}
+
+.site-list {
+  @media (min-width: @tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid #68B738;
+  }
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #68B738;
+  }
+}
+
+.site-list__link-catalog:hover,
+.site-list__link-catalog:focus {
+  color:rgba(91, 91, 91, 0.3);
+}
+
+.site-list__item--active-white {
+  @media (min-width: @tablet-width) {
+  border-bottom: 2px solid #68B738;
+}
+@media (min-width: @desktop-width) {
+  border-bottom: 2px solid #FFFFFF;
+}
+}
