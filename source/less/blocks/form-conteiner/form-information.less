@@ -4,6 +4,103 @@
 .name-cat,
 .weight-cat,
 .age-cat, {
+  font-family: 'Oswald';
   text-transform: uppercase;
   color: #444444;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-information {
+  border: none;
+  padding: 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-left: 71px;
+    border-bottom: none;
+    margin-right: 67px;
+    margin-bottom: 72px;
+}
+@media (min-width: @desktop-width) {
+  margin: 0;
+  
+}
+}
+
+.name-cat{
+  border: 1px solid #E7E7E7;
+  padding: 14px 159px 13px 20px;
+  width: 49px;
+  @media (min-width: @tablet-width) {
+    padding: 11px 489px 11px 20px;
+    width: 61px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 11px 428px 11px 20px;
+  }
+}
+
+.weight-cat {
+  border: 1px solid #E7E7E7;
+  padding: 14px 180px 13px 20px;
+  width: 7px;
+  @media (min-width: @tablet-width) {
+    padding: 11px 514px 11px 20px;
+    width: 8px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 11px 454px 11px 20px;
+  }
+}
+
+.age-cat {
+  border: 1px solid #E7E7E7;
+  padding: 14px 146px 13px 20px;
+  width: 7px;
+  @media (min-width: @tablet-width) {
+    padding: 11px 472px 11px 20px;
+    width: 8px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 11px 412px 11px 20px;
+  }
+}
+
+.name-cat:hover,
+.weight-cat:hover,
+.age-cat:hover {
+  border: 1px solid #CDCDCD;
+  outline: none;
+}
+
+.name-cat:focus,
+.weight-cat:focus,
+.age-cat:focus {
+  outline: none;
+  border: 2px solid #444444;
+}
+
+.information-about-name,
+.information-about-weight,
+.information-about-age {
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.information-about-age {
+  padding-bottom: 0;
 }

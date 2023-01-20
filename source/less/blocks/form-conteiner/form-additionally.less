@@ -1,14 +1,51 @@
-.control-label {
-  text-transform: uppercase;
-}
-
-.form-order {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
 .form-additionally__title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 34px;
+  padding: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+}
+
+.form-additionally__title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  width: 136px;
+  height: 2px;
+  left: 160px;
+  top: 15px;
+  background-color: #68B738;
+  @media (min-width: @tablet-width) {
+    width: 446px;
+    left: 250px;
+    top: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1078px;
+    left: 251px;
+  }
+}
+
+
+.form-additionally {
+  border: none;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 34px;
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-bottom: 54px;
+}
+@media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-bottom: 61px;
+    margin-right: 205px;
+}
 }

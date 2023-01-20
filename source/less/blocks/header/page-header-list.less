@@ -2,4 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    list-style-type: none;
+    padding-left: 20px;
+    width: 191px;
+    @media (min-width: @tablet-width) {
+        justify-content: flex-start;
+        padding-left: 30px;
+        margin-top: 24px;
+    }
+    @media (min-width: @desktop-width) {
+        margin-top: 53px;
+        padding-left: 110px;
+    }
 }

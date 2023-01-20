@@ -1,5 +1,43 @@
 .contacts-list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 52px;
+    list-style-type: none;
+    width: 132px;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 94px;
+    margin-bottom: 43px;
+    @media (min-width: @tablet-width) {
+        margin-left: 0;
+        flex-wrap: wrap;
+        margin-right: 129px;
+        margin-top: 45px;
+    }
+    @media (min-width: @desktop-width) {
+        margin-right: 384px;
+    }
+}
+
+.contacts-list::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/index/map-logo.png);
+  background-repeat: no-repeat;
+  width: 57px;
+  height: 53px;
+  left: 38px;
+  top: -345px;
+  z-index: 2;
+  @media (min-width: @tablet-width) {
+  left: 45px;
+  top: -290px;
+  }
+  @media (min-width: @desktop-width) {
+  left: 45px;
+  top: -290px;
+  }
 }

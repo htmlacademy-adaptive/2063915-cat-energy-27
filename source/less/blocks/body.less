@@ -5,12 +5,13 @@
   font-size: 16px;
   line-height: 18px;
   margin: 0 auto;
-  width: 300px;
+  width: 320px;
+  margin: 0 auto;
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 768px;
   }
   @media (min-width: @desktop-width) {
-    width: 1224px;
+    width: 1440px;
   }
 }
 
@@ -23,4 +24,18 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="number"],
+input[type="email"],
+input[type="text"],
+input[type="submit"] input[type="button"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
 }
