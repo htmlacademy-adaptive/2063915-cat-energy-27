@@ -56,23 +56,6 @@
   }
 }
 
-.form-contact-details__title::before {
-  @media (min-width: @tablet-width){
-  display: block;
-  position: absolute;
-  content: "";
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 2px;
-  left: -69px;
-  top: 20px;
-  background-color: #68B738;
-  }
-  @media (min-width: @desktop-width) {
-    width: 70px;
-    left: -110px;
-  }
-}
 
 .form-contact-details {
   border: none;
@@ -82,9 +65,7 @@
   margin-right: 20px;
   margin-bottom: 23.5px;
   @media (min-width: @tablet-width) {
-    margin-left: 69px;
-    margin-right: 66px;
-    margin-bottom: 65px;
+    margin: 0 66px 65px 69px;
   }
   @media (min-width: @desktop-width) {
     margin-left: 111px;

@@ -96,18 +96,47 @@
     }
 }
 
-
-.advantages__description1::before {
+.advantages__description::before {
     @media (min-width: @tablet-width) {
-        content: "";
+        content: "1";
+        color: #F2F2F2;
         display: block;
         position: absolute;
-        background-image: url(../img/index/1.svg);
         background-repeat: no-repeat;
-        width: 112px;
-        height: 280px;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
         left: 107px;
-        top: 42px;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.advantages__description2::before {
+    @media (min-width: @tablet-width) {
+        content: "2";
+        left: 107px;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.advantages__description3::before {
+    @media (min-width: @tablet-width) {
+        content: "3";
+        left: 107px;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.advantages__description4::before {
+    @media (min-width: @tablet-width) {
+        content: "4";
+        left: 107px;
+        top: 0;
         z-index: -1;
     }
 }
@@ -129,21 +158,6 @@
 }
 
 
-.advantages__description2::before {
-    @media (min-width: @tablet-width) {
-        content: "";
-        display: block;
-        position: absolute;
-        background-image: url(../img/index/2.svg);
-        background-repeat: no-repeat;
-        width: 134px;
-        height: 280px;
-        left: 110px;
-        top: 42px;
-        z-index: -1;
-    }
-}
-
 .advantages__description2::after {
         content: "";
         display: block;
@@ -161,20 +175,6 @@
     }
 }
 
-.advantages__description3::before {
-    @media (min-width: @tablet-width) {
-        content: "";
-        display: block;
-        position: absolute;
-        background-image: url(../img/index/3.svg);
-        background-repeat: no-repeat;
-        width: 134px;
-        height: 280px;
-        left: 110px;
-        top: 42px;
-        z-index: -1;
-    }
-}
 
 .advantages__description3::after {
         content: "";
@@ -193,20 +193,6 @@
     }
 }
 
-.advantages__description4::before {
-    @media (min-width: @tablet-width) {
-        content: "";
-        display: block;
-        position: absolute;
-        background-image: url(../img/index/4.svg);
-        background-repeat: no-repeat;
-        width: 136px;
-        height: 280px;
-        left: 110px;
-        top: 42px;
-        z-index: -1;
-    }
-}
 
 .advantages__description4::after {
         content: "";
