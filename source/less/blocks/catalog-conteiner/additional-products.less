@@ -73,7 +73,11 @@
   margin-left: 20px;
   text-align: center;
   margin-bottom: 35px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/image1-renita.png");
+  }
   @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/image2.png");
     flex-direction: row;
     justify-content: space-between;
     margin-top: 69px;
@@ -82,8 +86,12 @@
     margin-left: 31px;
     align-items: center;
     margin-bottom: 76px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/image2-renita.png");
+    }
   }
   @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/image3.png");
     flex-direction: column;
     justify-content: flex-start;
     width: 245.02px;
@@ -91,7 +99,10 @@
     margin-top: 0;
     margin-left: 79px;
     margin-bottom: 86px;
-
+    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/image3-renita.png");
+    }
   }
 }
 

@@ -25,19 +25,30 @@
   position: absolute;
   content: "";
   display: block;
-  background-image: url(../img/index/map-logo.png);
+  background-image: url(../img/index/pin-mobile.png);
   background-repeat: no-repeat;
   width: 57px;
   height: 53px;
   left: 38px;
   top: -345px;
   z-index: 2;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/pin-mobile-renita.png");
+    background-size: 100% auto;
+    z-index: 2;
+  }
   @media (min-width: @tablet-width) {
-  left: 45px;
-  top: -290px;
+    background-image: url(../img/index/pin-tablet.png);
+    width: 113px;
+    height: 105px;
+    left: 0;
+    top: -390px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/pin-tablet-renita.png");
+  }
   }
   @media (min-width: @desktop-width) {
-  left: 45px;
-  top: -290px;
+  left: 10px;
+  top: -340px;
   }
 }
