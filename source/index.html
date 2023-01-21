@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>«Кэт энерджи»</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,7 +17,11 @@
         <ul class="page-header-list">
             <li class="page-header_item">
                 <a class="page-header__logo" href="index.html">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/index/logo-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/index/logo-tablet.svg">
                     <img class="logo-image" src="img/index/logo-mobile.svg" width="33.5" height="38" alt="Кот Энерджи">
+                </picture>
                 </a>
             </li>
             <li class="page-header_item">
@@ -45,8 +53,12 @@
         <div class="main-conteiner__picture-desktop main-conteiner__wrapper">
             <h1 class="main-conteiner__heading-1">Функциональное питание для котов</h1>
             <h3 class="main-conteiner__heading-2">Занялся собой? Займись котом!</h3>
-            <img class="can-mobile" src="img/index/index-can-mobile1.png" width="280" height="270"
+            <picture>
+                <source media="(min-width: 1440px)" srcset="img/index/index-can.png 1x, img/index/index-can-retina.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index/index-can-tablet.png 1x, img/index-can-tablet-retina.png 2x">
+            <img class="can-mobile" src="img/index/index-can-mobile1.png" width="280" height="270" srcset="img/index/index-can-mobile-retina.png 2x"
                 alt="Упаковка с питанием">
+            </picture>
         </div>
         <button class="main-conteiner__button button" type="button">Подобрать программу</button>
         <section class="directions">
@@ -126,7 +138,11 @@
                 <h3 class="example__heading3">15 000 руб.</h3>
             </div>
             <div class="toggles_cat-back">
-            <img class="toggles_cat" src="img/index/cat-slider-mobile.png" width="280" height="256" alt="слайдер кота">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="img/index/compare-slider.png 1x, img/index/compare-slider-retina.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index/cat-slider-tablet.png 1x, img/cat-slider-tablet-retina.png 2x">
+            <img class="toggles_cat" src="img/index/cat-slider-mobile.png" width="280" height="256" srcset="img/index/cat-slider-mobile-retina.png 2x" alt="слайдер кота">
+        </picture>
         </div>
         </section>
     </main>
