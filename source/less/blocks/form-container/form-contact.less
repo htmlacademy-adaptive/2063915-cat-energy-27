@@ -1,0 +1,102 @@
+.form-contact {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form-contact__contact-email,
+.form-contact__contact-phone {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-contact__contact-email {
+  position: relative;
+}
+
+.form-contact__contact-email::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/email-stroke.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  left: 245px;
+  top: 0;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    left: 595px;
+    top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 535px;
+    top: 5px;
+  }
+}
+
+.form-contact__contact-phone {
+  position: relative;
+}
+
+.form-contact__contact-phone::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/phone-stroke.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  left: 245px;
+  top: 0;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    left: 595px;
+    top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 535px;
+    top: 5px;
+  }
+}
+
+.form-contact__form-email,
+.form-contact__form-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
+}
+
+.form-contact__form-email {
+  padding-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}

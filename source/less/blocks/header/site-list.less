@@ -3,16 +3,17 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  
+
   @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -20,17 +21,20 @@
   @media (min-width: @tablet-width) {
     margin-left: 36px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 32px;
   }
 }
+
+
 .site-list__item:first-child {
   @media (min-width: @tablet-width) {
-  margin-right: 36px;
+    margin-right: 36px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 37px;
-
   }
 }
 
@@ -42,17 +46,17 @@
   text-align: center;
   padding-top: 22px;
   padding-bottom: 24px;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
+
   @media (min-width: @tablet-width) {
     padding-top: 0;
-    padding-bottom: 0;
     border-top: none;
     padding-bottom: 7px;
-    
   }
+
   @media (min-width: @desktop-width) {
     z-index: 1;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-bottom: 8px;
   }
 }
@@ -64,7 +68,8 @@
 }
 
 .site-list__link-last {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
+
   @media (min-width: @tablet-width) {
     border-bottom: none;
   }
@@ -78,12 +83,13 @@
 
 .site-list {
   @media (min-width: @tablet-width) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
-  margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-right: 30px;
   }
+
   @media (min-width: @desktop-width) {
     justify-content: flex-end;
     margin-right: 0;
@@ -92,23 +98,25 @@
 
 .site-list__item--active {
   @media (min-width: @tablet-width) {
-    border-bottom: 2px solid #68B738;
+    border-bottom: 2px solid #68b738;
   }
+
   @media (min-width: @desktop-width) {
-    border-bottom: 2px solid #68B738;
+    border-bottom: 2px solid #68b738;
   }
 }
 
 .site-list__link-catalog:hover,
 .site-list__link-catalog:focus {
-  color:#717171;
+  color: #5e5d5d;
 }
 
 .site-list__item--active-white {
   @media (min-width: @tablet-width) {
-  border-bottom: 2px solid #68B738;
-}
-@media (min-width: @desktop-width) {
-  border-bottom: 2px solid #FFFFFF;
-}
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
 }
