@@ -1,0 +1,152 @@
+.main-container__picture-desktop {
+  background-image: url("../img/index/index-background-mobile.png");
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/index-background-mobile-renita.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 720px auto;
+    position: relative;
+    left: 720px;
+    top: -172px;
+    margin-bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/index-background-desktop-renita.png");
+      background-size: 1338px auto;
+    }
+  }
+}
+
+
+.main-container__wrapper {
+  @media (min-width: @desktop-width) {
+    height: 694px;
+    margin-bottom: 0;
+  }
+}
+
+
+.main-container__heading-1 {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 27px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+    width: 500px;
+    margin-left: 117px;
+    padding-top: 0;
+    margin-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -530px;
+    padding-top: 223px;
+  }
+}
+
+.main-container__heading-2 {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: start;
+    margin-left: 119px;
+    padding-top: 44px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -530px;
+    padding-top: 39px;
+    margin-bottom: 0;
+  }
+}
+
+.main-container__can-mobile {
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: -605px;
+    top: -270px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.main-container__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 44px;
+  background-color: #68b738;
+  text-decoration: none;
+  border-style: none;
+  margin-top: 3px;
+  margin-left: 20px;
+  width: 280px;
+  margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    left: 120px;
+    top: -580px;
+    position: relative;
+    padding: 16px 24px;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 189px;
+    top: -413px;
+  }
+}
+
+.main-container__button:hover,
+.main-container__button:focus {
+  background-color: #5eaa2f;
+  outline: none;
+}
+
+.main-container__button:active {
+  color: #ffffff4d;
+}
+
