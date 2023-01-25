@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   }
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .logo-image {
@@ -32,5 +35,12 @@
     border-bottom: none;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.page-header_item:last-child{
+  margin-top: 10px;
+  @media (min-width: @tablet-width){
+    margin-top: 0;
   }
 }

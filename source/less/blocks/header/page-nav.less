@@ -5,12 +5,12 @@
   list-style: none;
   width: auto;
   @media (min-width: @tablet-width) {
-    margin-top: 42px;
+    margin-top: 22px;
     padding-right: 30px;
   }
   @media (min-width: @desktop-width) {
     margin-right: 110px;
-    margin-top: 70px;
+    margin-top: 54px;
     padding-right: 0;
   }
 }
@@ -34,12 +34,12 @@
 .page-nav__toggle {
   position: absolute;
   width: 64px;
-  height: 66px;
+  height: 45px;
   padding: 0;
   text-decoration: none;
   border: none;
   margin-left: 256px;
-  top: 6px;
+  top: 20px;
   z-index: 2;
   display: block;
   cursor: pointer;
@@ -52,6 +52,7 @@
 .page-nav--closed .page-nav__toggle::before {
   content: "";
   position: absolute;
+  top: 5px;
   right: 20px;
   width: 24px;
   bottom: 42px;

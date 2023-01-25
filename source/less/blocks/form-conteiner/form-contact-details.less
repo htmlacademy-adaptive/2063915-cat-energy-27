@@ -2,7 +2,7 @@
 .contact__phone,
 .txt,
 .form-contact-details_email {
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -31,7 +31,7 @@
     padding: 0;
 }
 @media (min-width: @desktop-width) {
-  margin-bottom: 76px;
+  margin-bottom: 72px;
 }
 }
 
@@ -81,6 +81,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .form-email {
@@ -95,7 +98,7 @@
 
 .form-contact-details_email {
   width: 153px;
-  padding: 14px 52px 13px 15px;
+  padding: 14px 52px 11px 15px;
   border: 1px solid #E7E7E7;
   @media (min-width: @tablet-width) {
     width: 191.65px;
@@ -115,7 +118,7 @@
   display: block;
   position: absolute;
   content: "";
-  background-image: url(../img/form/email-stroke.svg);
+  background-image: url(../img/email-stroke.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -127,7 +130,7 @@
     top: 5px;
   }
   @media (min-width: @desktop-width) {
-    left: 510px;
+    left: 535px;
     top: 5px;
   }
 }
@@ -139,7 +142,7 @@
   display: block;
   position: absolute;
   content: "";
-  background-image: url(../img/form/phone-stroke.svg);
+  background-image: url(../img/phone-stroke.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -151,7 +154,7 @@
     top: 5px;
   }
   @media (min-width: @desktop-width) {
-    left: 510px;
+    left: 535px;
     top: 5px;
   }
 }

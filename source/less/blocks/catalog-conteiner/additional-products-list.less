@@ -4,6 +4,7 @@
     text-transform: uppercase;
     color: #222222;
     margin-bottom: 13px;
+    margin-top: 0;
     @media (min-width: @tablet-width) {
         font-size: 20px;
         line-height: 20px;
@@ -19,20 +20,26 @@
 
 .additional-products-volume,
 .additional-products-price {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
     color: #444444;
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
         font-size: 16px;
         line-height: 20px;
     }
 }
+
+.additional-products-volume {
+    @media (min-width: @tablet-width) {
+        margin-right: 49px;
+    }
+}
   
 .additional-products__button {
-    font-family: 'Oswald';
+    font-family: 'Oswald', "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -63,13 +70,13 @@
 .additional-products__item {
     border-bottom: 1px solid #CDCDCD;
     padding-top: 13px;
-    padding-bottom: 19px;
+    padding-bottom: 18px;
     display: flex;
     flex-direction: column;
     @media (min-width: @tablet-width) {
         border: 1px solid #CDCDCD;
-        padding-top: 26px;
-        padding-bottom: 28px;
+        padding-top: 27px;
+        padding-bottom: 31px;
         padding-left: 38px;
         padding-right: 38px;
         flex-direction: row;
@@ -79,8 +86,8 @@
     }
     @media (min-width: @desktop-width) {
         padding: 0;
-        padding-top: 15px;
-        padding-bottom: 17px;
+        padding-top: 16px;
+        padding-bottom: 15px;
         border: none;
         border-bottom: 1px solid #CDCDCD;
         width: 894px;
@@ -98,6 +105,9 @@
 .additional-products-list {
     list-style-type: none;
     padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
     @media (min-width: @tablet-width) {
         margin: 0;
         width: 708px;
@@ -116,9 +126,11 @@
     justify-content: space-between;
     flex-direction: row;
     @media (min-width: @tablet-width) {
+        justify-content: flex-end;
         width: 223px;
     }
     @media (min-width: @desktop-width) {
+        justify-content: space-between;
         width: 284px;
         margin-bottom: 0;
         margin-right: 40px;
