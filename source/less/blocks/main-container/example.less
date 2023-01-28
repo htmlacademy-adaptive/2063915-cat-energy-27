@@ -1,23 +1,24 @@
 .example {
-  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   width: 320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
 
   @media (min-width: @tablet-width) {
-    background-color: #ffffff;
     width: 768px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    background-color: #eaeaea;
     width: 1440px;
     height: 598px;
-    margin-bottom: -200px;
+    margin: 0 auto;
   }
 }
+
 
 .example__wrapper {
   @media (min-width: @tablet-width) {
@@ -45,7 +46,6 @@
     padding-right: 1005px;
     padding-bottom: 76px;
     margin-left: 0;
-    background-color: #ffffff;
   }
 }
 
@@ -117,7 +117,7 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-left: 189px;
-  top: 1873px;
+  top: 308.5px;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -146,7 +146,6 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    background-color: #eaeaea;
     height: 462px;
     margin-bottom: 0;
   }

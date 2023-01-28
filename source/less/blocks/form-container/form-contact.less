@@ -1,10 +1,16 @@
 .form-contact {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 71px;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 110px;
   }
 }
 
@@ -49,11 +55,6 @@
 .form-contact__txt:focus {
   outline: none;
   border: 2px solid #444444;
-}
-
-
-.form-contact__form-email {
-  position: relative;
 }
 
 
@@ -111,6 +112,7 @@
 }
 
 .form-contact__form-email {
+  position: relative;
   padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {

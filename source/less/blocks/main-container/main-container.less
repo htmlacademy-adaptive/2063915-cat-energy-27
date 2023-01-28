@@ -28,11 +28,44 @@
   }
 }
 
+.main-container::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 659px;
+  top: 1566px;
+  background-color: #eaeaea;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    top: 3124px;
+    height: 462px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    top: 1798px;
+    height: 462px;
+  }
+}
+
 
 .main-container__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
     height: 694px;
     margin-bottom: 0;
+    width: 1440px;
   }
 }
 
