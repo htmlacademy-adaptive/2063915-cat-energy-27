@@ -40,7 +40,7 @@ const html = () => {
 //Scripts
 
 const script = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/script.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
 }
@@ -69,7 +69,7 @@ const createWebP = () => {
 //SVG
 
 const svg = () => {
-  return gulp.src(['source/img/catalog/*.svg', 'source/img/form/*.svg', 'source/img/index/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/catalog/*.svg', 'source/img/form/*.svg', 'source/img/index/*.svg', 'source/img/favicons/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgmin())
   .pipe(gulp.dest('build/img'));
 }

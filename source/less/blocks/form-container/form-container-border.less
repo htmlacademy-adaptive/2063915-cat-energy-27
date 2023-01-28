@@ -1,0 +1,39 @@
+.form-container-border::before {
+  display: block;
+  position: relative;
+  content: "";
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2px;
+  top: 585px;
+  background-color: #68b738;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    top: 1165px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 585px;
+  }
+}
+
+.form-container-border::after {
+  display: block;
+  position: relative;
+  content: "";
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2px;
+  top: -343px;
+  background-color: #68b738;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    top: -363px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -315px;
+  }
+}

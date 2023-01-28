@@ -46,8 +46,8 @@
   @media (min-width: @desktop-width) {
     width: 565px;
     height: 198px;
-    position: relative;
-    top: 300px;
+    position: absolute;
+    top: 100px;
     left: 100px;
     z-index: 2;
   }
@@ -76,9 +76,17 @@
 }
 
 .footer-container {
-  display: flex;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.footer-container__wrapper {
   width: 320px;
-  height: 236px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -87,6 +95,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1440px;
+    position: relative;
   }
 }
 
@@ -150,6 +159,8 @@
 }
 
 .footer-container__location {
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     height: 400px;
   }

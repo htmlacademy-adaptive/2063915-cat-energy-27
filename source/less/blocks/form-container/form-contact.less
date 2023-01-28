@@ -1,15 +1,38 @@
 .form-contact {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 71px;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 110px;
+  }
+}
+
+.form-contact__txt {
+  border: 1px solid #e7e7e7;
+  padding: 14.7px 69px 14px 15px;
+  width: 118px;
+
+  @media (min-width: @tablet-width) {
+    width: 145.5px;
+    padding: 11px 363.5px 11px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 146px;
+    padding: 11px 301px 11px 20px;
   }
 }
 
 .form-contact__contact-email,
-.form-contact__contact-phone {
+.form-contact__contact-phone,
+.form-contact__txt {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -24,59 +47,58 @@
   }
 }
 
-.form-contact__contact-email {
+.form-contact__txt:hover {
+  border: 1px solid #cdcdcd;
+  outline: none;
+}
+
+.form-contact__txt:focus {
+  outline: none;
+  border: 2px solid #444444;
+}
+
+
+.form-contact__form-phone {
   position: relative;
 }
 
-.form-contact__contact-email::after {
-  display: block;
+.form-contact__email-stroke {
+  stroke: #000000;
+  fill: none;
+  left: 240px;
   position: absolute;
-  content: "";
-  background-image: url("../img/email-stroke.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: 245px;
-  top: 0;
-  z-index: 2;
 
   @media (min-width: @tablet-width) {
-    left: 595px;
-    top: 5px;
+    left: 585px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 535px;
-    top: 5px;
+    left: 515px;
   }
 }
 
-.form-contact__contact-phone {
-  position: relative;
-}
-
-.form-contact__contact-phone::after {
-  display: block;
+.form-contact__phone-stroke {
+  stroke: #000000;
+  fill: none;
+  left: 240px;
   position: absolute;
-  content: "";
-  background-image: url("../img/phone-stroke.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: 245px;
-  top: 0;
-  z-index: 2;
 
   @media (min-width: @tablet-width) {
-    left: 595px;
-    top: 5px;
+    left: 585px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 535px;
-    top: 5px;
+    left: 515px;
   }
 }
+
+.form-contact__email-stroke:focus,
+.form-contact__phone-stroke:focus,
+.form-contact__email-stroke:hover,
+.form-contact__phone-stroke:hover {
+  stroke: #68b738;
+}
+
 
 .form-contact__form-email,
 .form-contact__form-phone {
@@ -90,6 +112,7 @@
 }
 
 .form-contact__form-email {
+  position: relative;
   padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {

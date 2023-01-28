@@ -80,6 +80,20 @@
   border: 0;
 }
 
+.form-filter__control {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+  }
+}
+
 .form-filter__radio[type="radio"]:checked + .form-filter__control-mark-radio::before {
   position: absolute;
   width: 20px;
